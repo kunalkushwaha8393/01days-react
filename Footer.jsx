@@ -10,10 +10,10 @@ function Footer() {
               <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-400 hover:text-white">First Link</a>
+                  <a className="text-gray-400 hover:text-white"> home </a>
                 </li>
                 <li>
-                  <a className="text-gray-400 hover:text-white">Second Link</a>
+                  <a className="text-gray-400 hover:text-white"></a> 
                 </li>
                 <li>
                   <a className="text-gray-400 hover:text-white">Third Link</a>
