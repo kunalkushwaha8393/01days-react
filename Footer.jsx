@@ -30,7 +30,7 @@ function Footer() {
                   <a className="text-gray-400 hover:text-white">First Link</a>
                 </li>
                 <li>
-                  <a className="text-gray-400 hover:text-white">Second Link</a>
+                  <a className="text-gray-400 hover:text-white"> contend</a>
                 </li>
                 <li>
                   <a className="text-gray-400 hover:text-white">Third Link</a>
