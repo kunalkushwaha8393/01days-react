@@ -44,3 +44,60 @@ function Bio() {
 export default Bio;
 
 
+///Header.jsx
+
+function Header (){
+    return(
+        <div className="">
+        <h1>Developer potfolio</h1>
+           
+
+        </div>
+    )
+}
+export default Header;
+
+
+//Avatar.jsx
+
+function Avatar (){
+    return(
+          <div className="">
+           <img src="" alt="" />
+          </div>
+
+    );
+
+}
+
+export default Avatar; 
+
+
+///// Portifoliocard.jsx//////
+
+
+import Header from "./Header";
+import Avatar from "./Avatar";
+import Personalinfo from "./Personalinfo";
+
+import Bio from "./Bio";
+
+  function Portifoliocard (){
+     return(
+        <div className="">
+         <Header/>
+         <Avatar/>
+         <Bio/>
+         <Personalinfo/>
+
+
+
+        </div>
+     );
+  }
+
+  export default Portifoliocard;
+ 
+ 
+
+
