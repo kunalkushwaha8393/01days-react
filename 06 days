@@ -1,0 +1,46 @@
+///   prtsonalinfo.jsx
+
+function Personalinfo (){
+     const name =" alex json";
+     const role ="fronted developer";
+     const location ="san fracico ";
+     const  email ="alex@exaple .com";
+
+
+       return(
+         <div  className="">
+             <h2 className="">{name}</h2>
+             <p  className="">{role}</p>
+             <p className="">{location}</p>
+             <p className="">{email}</p>
+         </div>
+       )
+}
+ export default Personalinfo;
+
+///// bio.jsx
+
+function Bio() {
+    const biotext = " taht was try  tomake portofolio side make okay buudy that icreate a new one brother taht tha harracky use f the system mation way of lerninh"
+    const skills = ["html", "css", "react", "javascript", "nodejs",];
+    return (
+        <div>
+            <h2>aboout me</h2>
+            <p className="">{biotext}</p>
+            <h3> skill</h3>
+            <div className="">
+                {skills.map((skill, index)=> (
+                    <span key={index}>{skill}</span>
+
+                ))}
+
+            </div>
+
+        </div>
+
+    );
+};
+ 
+export default Bio;
+
+
