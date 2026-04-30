@@ -1,0 +1,34 @@
+/// Avtar.jsx//
+function Avatar() {
+    return (
+        <div className="flex justify-center -mt-5 relative">
+            <div className="w-32 h-32 rounded-full border-4 border-indigo-400 bg-gray-200 overflow-hidden flex items-center justify-center">
+                {/* Placeholder for Image as requested - user will add image themselves */}
+                <div className="text-gray-400 text-xs text-center px-2 font-medium">Add Image Here</div>
+            </div>
+        </div>
+    );
+}
+
+export default Avatar;
+
+
+/// Header.jsx//
+
+function Header() {
+    return (
+        <div className="bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 h-28 flex flex-col items-center justify-center relative">
+            <h1 className="text-white text-2xl font-bold tracking-wide">Developer Portfolio</h1>
+            <div className="w-16 h-1 bg-white mt-1 rounded-full"></div>
+        </div>
+    )
+}
+export default Header;
+
+
+
+//portfoli card .jsx///
+
+
+//portfolioinfo.jsx//
+//Bio.jsx////
