@@ -79,6 +79,99 @@ function App() {
 
 export default App;
 
+/////////////////////////////props notes//////////////////
+
+
+# 📘 React Props (Theory Notes)
+
+## 🔹 What are Props?
+
+Props (short for Properties) are used to pass data from one component to another in React. They allow components to be dynamic and reusable.
+
+---
+
+## 🔹 Purpose of Props
+
+The main purpose of props is to transfer data from a parent component to a child component. This helps in creating flexible and reusable UI components.
+
+---
+
+## 🔹 Data Flow in Props
+
+Props follow a one-way data flow:
+
+* Data moves from parent to child
+* Child components cannot send data back using props directly
+
+---
+
+## 🔹 Nature of Props
+
+* Props are read-only
+* Props cannot be modified inside the component
+* They are immutable
+
+---
+
+## 🔹 How Props Work Conceptually
+
+A parent component provides data as attributes, and the child component receives that data as an object called props.
+
+---
+
+## 🔹 Types of Data Passed via Props
+
+Props can carry different types of data:
+
+* Strings
+* Numbers
+* Booleans
+* Arrays
+* Objects
+* Functions
+
+---
+
+## 🔹 Props and Reusability
+
+Props make components reusable by allowing the same component to display different data based on the values passed to it.
+
+---
+
+## 🔹 Props vs State (Basic Difference)
+
+* Props are used to pass data between components
+* State is used to manage data within a component
+* Props are immutable, state is mutable
+
+---
+
+## 🔹 Props Immutability Rule
+
+Props should never be changed inside the receiving component. They must remain constant to ensure predictable behavior.
+
+---
+
+## 🔹 Destructuring Props
+
+Props can be accessed directly or by extracting specific values from them, making the code cleaner and easier to read.
+
+---
+
+## 🔹 Key Advantages of Props
+
+* Enable component reusability
+* Make UI dynamic
+* Help maintain a clear data flow
+* Improve code structure
+
+---
+
+## 🔹 Summary
+
+Props are a core concept in React used to pass data from parent to child components. They are read-only, support one-way data flow, and play a major role in building reusable and dynamic user interfaces.
+
+
 
 
 
