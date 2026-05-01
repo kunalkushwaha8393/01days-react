@@ -1,0 +1,85 @@
+///// props function on a react//
+
+
+function Productcard(props) {
+  return (
+    <div>
+      <img src="{props.img}" alt="" />
+      <h2>{props.name}</h2>
+      <p>{props.description}</p>
+      <p>{props.price}</p>
+      <button onClick={() => alert("added", props.name)}>
+        add to card
+      </button>
+
+
+
+
+    </div>
+  )
+};
+
+
+function App() {
+  return (
+
+    <div className="text-red-900">
+      <Productcard 
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      />
+      <Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      />
+      <Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      /><Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      /><Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      /><Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      /><Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      /><Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      /><Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      />
+    </div>
+  )
+};
+
+
+export default App;
+
+
+
+
+
