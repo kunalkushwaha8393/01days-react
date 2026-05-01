@@ -172,6 +172,97 @@ Props can be accessed directly or by extracting specific values from them, makin
 Props are a core concept in React used to pass data from parent to child components. They are read-only, support one-way data flow, and play a major role in building reusable and dynamic user interfaces.
 
 
+////////// Destructuring props /////////
+
+
+function Productcard({name,description,price}) {
+  return (
+    <div>
+      <img src="{props.img}" alt="" />
+      <h2>{name}</h2>
+      <p>{description}</p>
+      <p>{price}</p>
+      <button onClick={() => alert("added", name)}>
+        add to card
+      </button>
+
+
+
+
+    </div>
+  )
+};
+
+
+function App() {
+  return (
+
+    <div className="text-red-900">
+      <Productcard 
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      />
+      <Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      />
+      <Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      /><Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      /><Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      /><Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      /><Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      /><Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      /><Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        image="https://via.placeholder.com/150"
+      />
+    </div>
+  )
+};
+
+
+
+
+
+export default App;
+
+
+
+//// notes of destructring props/////////
+
+// what is a  destructring props ====== "Destructuring props is a shorter way to access values from props without using props.keyword." 
+
+
 
 
 
