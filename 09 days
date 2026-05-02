@@ -55,4 +55,89 @@ function app (){
 }
 
 
-///////
+///////  Implemented reusable Section component using children props/////
+
+function Section({title, children }){
+  return(
+    <>
+   <div>
+     <h2>{title}</h2>
+     <div>{children}</div>
+   </div>
+  
+  </>
+  );
+
+
+};
+
+
+
+
+
+
+function Productcard({
+  name,
+  description,
+  img,
+  price,
+  isOnSale = false,
+  salePrice = price
+}) {
+  return (
+    <div>
+      <img src={img} alt="" />
+
+      <h2>
+        {name}
+        {isOnSale && <span> SALE</span>}
+      </h2>
+
+      <p>{description}</p>
+
+      <span>
+        {isOnSale ? (
+          <>
+            <span>${price}</span>
+            <span> ${salePrice}</span>
+          </>
+        ) : (
+          `$${price}`
+        )}
+      </span>
+
+      <button onClick={() => alert("added " + name)}>
+        add to cart
+      </button>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <Section title="feauture product">
+      <Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        salePrice={599}
+        isOnSale={true}
+        img="https://via.placeholder.com/150"
+      />
+      </Section>
+       <Section title="sale is on buddy">
+      <Productcard
+        name="Phone (Sale)"
+        description="Discount phone"
+        price={899}
+        salePrice={699}
+        isOnSale={true}
+        img="https://via.placeholder.com/150"
+      />
+      </Section>
+    </div>
+  );
+}
+
+export default App;
