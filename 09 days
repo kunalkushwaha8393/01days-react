@@ -1,0 +1,58 @@
+//////Added ProductCard component with props and conditional rendering/////////
+
+
+function Productcard({
+  name,
+  description,
+  img,
+  price,
+  isOnSale = false,
+  salePrice = price
+}) {
+  return (
+    <div>
+      <img src={img} alt="" />
+
+      <h2>
+        {name}
+        {isOnSale && <span> SALE</span>}
+      </h2>
+
+      <p>{description}</p>
+
+      <span>
+        {isOnSale ? (
+          <>
+            <span>${price}</span>
+            <span> ${salePrice}</span>
+          </>
+        ) : (
+          `$${price}`
+        )}
+      </span>
+
+      <button onClick={() => alert("added " + name)}>
+        add to cart
+      </button>
+    </div>
+  );
+}
+
+function app (){
+  return(
+
+<Productcard
+        name="Phone"
+        description="Good camera phone"
+        price={899}
+        salePrice={599}
+        isOnSale={true}
+        img="https://via.placeholder.com/150"
+      />
+
+  )
+ 
+}
+
+
+///////
