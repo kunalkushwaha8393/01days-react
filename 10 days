@@ -1,0 +1,57 @@
+//////// that is props function////
+
+function Productcard({
+  name,
+  description,
+  img,
+  price,
+  isOnSale = false,
+  salePrice = price
+}) {
+  return (
+    <div>
+      <img src={img} alt="" />
+
+      <h2>
+        {name}
+        {isOnSale && <span> SALE</span>}
+      </h2>
+
+      <p>{description}</p>
+
+      <span>
+        {isOnSale ? (
+          <>
+            <span>${price}</span>
+            <span> ${salePrice}</span>
+          </>
+        ) : (
+          `$${price}`
+        )}
+      </span>
+
+      <button onClick={() => alert("added " + name)}>
+        add to cart
+      </button>
+    </div>
+  );
+}
+
+
+////// that is  also be second props function////
+function Section({title, children }){
+  return(
+    <>
+   <div>
+     <h2>{title}</h2>
+     <div>{children}</div>
+   </div>
+  
+  </>
+  );
+
+
+};
+
+//////////  that is in array in the object////////
+
