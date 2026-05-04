@@ -55,3 +55,103 @@ function Section({title, children }){
 
 //////////  that is in array in the object////////
 
+
+
+function App() {
+
+    const products =[{
+      id: 1, 
+      name: "gaming laptp pro",
+      description: "high perfmence laptap",
+      price: 1299,
+      image:"dfsnkjsd",
+      isOnSale: false
+    },
+    {
+      id: 2, 
+      name: "gaming laptp pro",
+      description: "high perfmence laptap",
+      price: 12999,
+      image:"dfsnkjsd",
+      isOnSale: false
+    },
+    {
+      id: 3, 
+      name: "smartphone",
+      description: "high perfmence phone",
+      price: 8999,
+      image:"dfsnkjsd",
+      isOnSale: false
+    },
+
+    {
+      id: 4, 
+      name: "gaming laptp dell",
+      description: "high perfmence laptap",
+      price: 7799,
+      image:"dfsnkjsd",
+      isOnSale: false
+
+    },
+
+  ]
+
+//////////// map function using key and value pair////////
+
+function App() {
+
+    const products =[{
+      id: 1, 
+      name: "gaming laptp pro",
+      description: "high perfmence laptap",
+      price: 1299,
+      image:"dfsnkjsd",
+      isOnSale: false
+    },
+    {
+      id: 2, 
+      name: "gaming laptp pro",
+      description: "high perfmence laptap",
+      price: 12999,
+      image:"dfsnkjsd",
+      isOnSale: false
+    },
+    {
+      id: 3, 
+      name: "smartphone",
+      description: "high perfmence phone",
+      price: 8999,
+      image:"dfsnkjsd",
+      isOnSale: false
+    },
+
+    {
+      id: 4, 
+      name: "gaming laptp dell",
+      description: "high perfmence laptap",
+      price: 7799,
+      image:"dfsnkjsd",
+      isOnSale: false
+
+    },
+
+  ]
+  return (
+    <div>
+      <h1 className="text-blue-500">our product
+      </h1>
+      <Section title="feauture product">
+      {products.map(product=>(
+        <Productcard className="text-blue-500"
+        key ={product.id}
+            {...product}
+        
+        />
+      ))}
+      </Section>
+    </div>
+  );
+}
+
+//////// here that is a full code/////
+
