@@ -6,7 +6,7 @@ const Courses = () => {
     const courses_data = [
         {
             id: 1,
-            title: 'Python c',
+            title: 'Python basic',
             price: 299,
             duration: '4 weeks',
             level: 'Beginner',
