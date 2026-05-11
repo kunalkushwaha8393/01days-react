@@ -1,6 +1,6 @@
 import React from 'react,
 
-const Courses = () => {
+const Course = () => {
 
 
     const courses_data = [
