@@ -1,4 +1,4 @@
-\# React Basic Notes
+\# React Basic
 
 
 
