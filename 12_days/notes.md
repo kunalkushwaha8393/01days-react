@@ -1,9 +1,5 @@
 \# React Basic notes ////
 
-
-
-
-
 \## Component
 
 \- React applications are divided into small parts called components
